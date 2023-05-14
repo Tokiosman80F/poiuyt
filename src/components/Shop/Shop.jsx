@@ -15,9 +15,7 @@ const Shop = () => {
     <div className="shop-container">
       <div className="products-view-container">
         <div className="heading">
-          <h1>
-            Shop Men's <span className="parallelogram">Collection</span>{" "}
-          </h1>
+          <h1>Shop Men's Collection</h1>
           <hr />
         </div>
 

@@ -2,10 +2,40 @@
   width: 300px;
   height: 510px;
   border: 2px solid;
-  text-align: center;
   border-radius: 5px;
+  position: relative;
 }
 .products img {
+  text-align: center;
   width: 286px;
   height: 286px;
+  margin: 7px;
+  border-radius: 10px;
+}
+.products-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+  margin: 0 0 20px;
+}
+.products-info {
+  margin-left: 10px;
+}
+.products-info p {
+  margin: 0px;
+  line-height: 30px;
+}
+.products-btn {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.products-btn:hover {
+  background: #ff9900;
 }
