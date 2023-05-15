@@ -3,7 +3,8 @@ nav {
 }
 .header {
   display: flex;
-  background-color: #ffffff;
+
+  background-color: rgb(255, 255, 33);
   padding: 20px 100px;
   justify-content: space-between;
   align-items: center;
