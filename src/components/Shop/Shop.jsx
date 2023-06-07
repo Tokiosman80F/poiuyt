@@ -21,10 +21,26 @@ const Shop = () => {
     setCart(newCart);
     addToDb(product.id);
   };
+
   useEffect(() => {
     const storedCart = getShoppingCart();
-    console.log(storedCart);
-  }, []);
+    const savedCart = [];
+    // step 1 : getting the id => explain; we use for in for getting the id from local storage
+    for (const id in storedCart) {
+      //step 2: getting the product using the id
+      const addedProduct = products.find((product) => product.id === id);
+      console.log(addedProduct);
+      if (addedProduct) {
+        // step 3: found and added quantity
+        const quantity = storedCart[id];
+        addedProduct.quantity = quantity;
+        console.log(quantity);
+        // step 4:addedProduct is pushed to the array of savedCart
+        savedCart.push(addedProduct);
+      }
+      setCart(savedCart);
+    }
+  }, [products]);
   return (
     <div className="products-view-container">
       <div className="heading">
