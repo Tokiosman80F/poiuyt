@@ -17,8 +17,12 @@
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.12.1",
     "sort-by": "^1.2.0"
+=======
+    "react-router-dom": "^6.12.0"
+>>>>>>> 4bdd1a9331736c6b0d10133311b1824c8abd6e4b
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
